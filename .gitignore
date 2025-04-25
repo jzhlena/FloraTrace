@@ -1,1 +1,2 @@
-node_modules/@types/whatwg-url/lib/URL.d.ts
+node_modules
+.env

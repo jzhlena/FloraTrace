@@ -8,7 +8,7 @@ import flower_routes from "./routes/flower.router.js"
 dotenv.config();
 
 const app = express();
-const port = process.env.PORT;
+const port = process.env.port;
 
 app.use(express.json());
 
