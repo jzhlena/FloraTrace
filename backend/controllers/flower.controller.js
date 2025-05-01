@@ -52,14 +52,14 @@ export const addFlowerToDb = async (req, res) => {
         return res.status(400).json({success: false, message: "Please provide the primary flower name."})
     }
     
-    // should automatically set to username and flower num
-    if (!flower.user_name || flower.flower_num){
-        return res.status(400).json({success: false, message: "Username or flower num not provided."})
-    }
-    // should automatically set to false
-    if (!flower.shop_viewable){
-        return res.status(400).json({ success: false, message: "Shop_viewable toggle not provided." })
-    }
+    // // should automatically set to username and flower num
+    // if (!flower.user_name || flower.flower_num){
+    //     return res.status(400).json({success: false, message: "Username or flower num not provided."})
+    // }
+    // // should automatically set to false
+    // if (!flower.shop_viewable){
+    //     return res.status(400).json({ success: false, message: "Shop_viewable toggle not provided." })
+    // }
 
     const newFlower = new Flower(flower);
     try {

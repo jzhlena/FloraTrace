@@ -1,5 +1,6 @@
 import express from "express";
 import dotenv from "dotenv";
+import cors from "cors";
 
 import { connect_db } from './config/db.js';
 
@@ -11,6 +12,10 @@ const app = express();
 const port = process.env.port;
 
 app.use(express.json());
+
+app.use(cors({
+    origin: 'http://localhost:5173',
+}))
 
 app.use("/api/flowers", flower_routes);
 

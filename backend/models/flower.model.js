@@ -17,11 +17,19 @@ const FlowerSchema = new mongoose.Schema({
     },
     flower_num: {
         type: Number,
-        required: true
+        required: false
     },
     shop_viewable: {
         type: Boolean,
-        required: true
+        required: false
+    },
+    image_url: {
+        type: String,
+        required: false
+    },
+    flower_price: {
+        type: Number,
+        required: false
     },
     details: {
         type: mongoose.Schema.Types.Mixed,
