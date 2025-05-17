@@ -20,6 +20,7 @@ const CreatePage = () => {
         "title": "Error",
         description: message,
         status: "error",
+        duration: 3000,
         isColsable: true,
       });
     }
@@ -28,6 +29,7 @@ const CreatePage = () => {
         title: "Success",
         description: message,
         status: "success",
+        duration: 3000,
         isClosable: true,
       })
     }
